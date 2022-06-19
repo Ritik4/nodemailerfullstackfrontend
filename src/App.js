@@ -31,7 +31,7 @@ function App() {
       time: "",
       month: "",
       day: "",
-    });
+    }); //some
   };
   const onStop = (data) => {
     axios.get("https://email-fullstack-backend.herokuapp.com/stop");
