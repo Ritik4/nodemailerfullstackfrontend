@@ -24,18 +24,12 @@ function App() {
     axios.get("https://email-fullstack-backend.herokuapp.com", {
       params: data,
     });
-
-    setSchedule({
-      emailFrom: "",
-      emailTo: "",
-      time: "",
-      month: "",
-      day: "",
-    }); //some
   };
+
   const onStop = (data) => {
     axios.get("https://email-fullstack-backend.herokuapp.com/stop");
   };
+  console.log(Schedule);
   return (
     <Box sx={styles.App}>
       <Box component="div" sx={styles.container}>
