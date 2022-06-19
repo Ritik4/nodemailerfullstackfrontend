@@ -20,7 +20,7 @@ function App() {
     day: "",
   });
   const onSubmit = (data) => {
-    axios.get("http://localhost:8000", {
+    axios.get("https://email-fullstack-backend.herokuapp.com", {
       params: data,
     });
 
@@ -33,7 +33,7 @@ function App() {
     });
   };
   const onStop = (data) => {
-    axios.get("http://localhost:8000/stop");
+    axios.get("https://email-fullstack-backend.herokuapp.com/stop");
   };
   return (
     <Box sx={styles.App}>
